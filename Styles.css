@@ -1,0 +1,61 @@
+table {color: blue}
+
+form {color: rgb(72, 255, 0)}
+
+h1 {color: green}
+
+.Success {color:blueviolet}
+
+.Error {color:rgba(63, 141, 137, 0.404)}
+
+#test {color:maroon}
+
+.bgred {background-color: rgb(255, 0, 0);}
+
+.bgblue {
+    background-color: aqua;
+    text-align: center;
+    text-shadow: 0in;
+    word-spacing: 20px;
+    letter-spacing: 20px;
+    display: block;
+}
+
+.font-styles {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-stretch: expanded;
+    font-size: large;
+}
+
+ul {
+    list-style-type:decimal-leading-zero;
+    margin: 0;
+    padding: 0;
+}
+
+box-model {
+    border:1px solid rgb(72, 255, 0);
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 30px;
+}
+
+th,td {
+    border-bottom: 1px solid green;
+    padding: 15px;
+
+}
+
+table {
+    text-align: center;
+    width: 60%;
+}
+
+td {
+    text-align: center;
+}

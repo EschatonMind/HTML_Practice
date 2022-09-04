@@ -6,6 +6,7 @@
     <meta name="author" content="Me" />
     <meta name="description" content="A test HTML project" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
     <h1>Heading 1</h1>
@@ -16,13 +17,13 @@
     <h6>Heading 6</h6>
 
     <p>The first Pargraph</p>
-    <p>
+    <p class="Error">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laborum nam.
       Vitae ipsa impedit delectus accusantium eaque quibusdam architecto modi
       hic distinctio earum laboriosam, voluptas dolor rem. Ab, cum dignissimos.
     </p>
     <hr />
-    <p>
+    <p class="Success">
       <strong
         >,<em> ipsum dolor sit amet consectetur adipisicing elit.</em></strong
       >
@@ -37,10 +38,12 @@
       >
       <sup>at nam,</sup> <small>aliquid quos?</small>
     </p>
-    <div>Block 1</div>
+    
+    <p id="test">Id Selector</p>
+    <div class="bgblue">Block 1</div>
     <div>Block 2</div>
 
-    <span>Inline 1</span>
+    <span class="bgred">Inline 1</span>
     <span>Inline 2</span>
 
     <ul>
@@ -66,7 +69,7 @@
     <a href="https://Google.com" target="_blank">Google</a>
     <a href="Contact.html">Contact</a>
 
-    <table>
+    <table class="font-styles">
       <thead>
         <tr>
           <th>Heading 1</th>
@@ -93,33 +96,43 @@
       </tbody>
     </table>
     <form>
+      <label for="Username">Username</label><br />
+      <input type="text" id="Username" /><br /><br />
 
-        <label for="Username">Username</label><br />
-        <input type="text" id="Username"><br /><br />
+      <label for="about">About You</label><br />
+      <textarea id="about"></textarea><br /><br />
 
-        <label for="about">About You</label><br />
-        <textarea id="about"></textarea><br /><br />
+      <label for="Country">Country</label><br />
+      <select id="Country">
+        <option value="iran">Iran</option>
+        <option value="us">US</option>
+        <option value="japan">Japan</option></select
+      ><br /><br />
 
-        <label for="Country">Country</label><br />
-        <select id="Country">
-            <option value="iran">Iran</option>
-            <option value="us">US</option>
-            <option value="japan">Japan</option>
-        </select><br /><br />
+      <lable>Job type</lable><br />
+      <input type="radio" name="jobtype" value="parttime" id="parttime" />
+      <label for="parttime">Part Time</label>
+      <br />
+      <input type="radio" name="jobtype" value="fulltime" id="fulltime" />
+      <label for="fulltime">Full Time</label>
 
-        <lable>Job type</lable><br />
-        <input type="radio" name="jobtype" value="parttime" id="parttime" />
-        <label for="parttime">Part Time</label>
-        <br>
-        <input type="radio" name="jobtype" value="fulltime" id="fulltime" />
-        <label for="fulltime">Full Time</label>
-
-        <lable>Job type</lable><br />
-        <input type="checkbox" name="jobtypecb" value="parttime" id="parttimecb" />
-        <label for="parttimecb">Part Time</label>
-        <br>
-        <input type="checkbox" name="jobtypecb" value="fulltime" id="fulltimecb" />
-        <label for="fulltimecb">Full Time</label>
+      <lable>Job type</lable><br />
+      <input
+        type="checkbox"
+        name="jobtypecb"
+        value="parttime"
+        id="parttimecb"
+      />
+      <label for="parttimecb">Part Time</label>
+      <br />
+      <input
+        type="checkbox"
+        name="jobtypecb"
+        value="fulltime"
+        id="fulltimecb"
+      />
+      <label for="fulltimecb">Full Time</label>
     </form>
+    <div class="box-model">Box model</div>
   </body>
 </html>
